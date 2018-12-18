@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants" >
+
+    <ImageView
+        android:id="@+id/cell_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+       />
+
+    <!-- 标题 -->
+
+    <TextView
+        android:id="@+id/cell_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/cell_image"
+        android:layout_toRightOf="@id/cell_image"
+        android:fontFamily="黑体"
+        android:textSize="18sp" />
+
+    <!-- 简介 -->
+
+    <TextView
+        android:id="@+id/cell_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/cell_title"
+        android:layout_below="@id/cell_title"
+        android:ellipsize="middle"
+        android:maxLines="3"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" />
+
+    <Button
+        android:id="@+id/btn_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/cell_image"
+        android:layout_alignRight="@id/cell_desc"
+        android:layout_below="@id/cell_desc"
+        android:layout_marginRight="20dp"
+        android:background="#f00"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="购买"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/cell_pride"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_buy"
+        android:layout_toLeftOf="@+id/btn_buy"
+        android:layout_alignLeft="@id/cell_desc"
+         android:textColor="#f00"
+        android:textSize="18sp" />
+
+</RelativeLayout>
